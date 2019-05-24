@@ -14,7 +14,7 @@ public class LoadLevel : MonoBehaviour
 	{
 		GameObject go = GameObject.FindGameObjectWithTag ("Manage");
 		scoreScript = go.GetComponent<Score> ();
-		message.text = "Collect all crystals to proceed";
+		message.text = "Collect 30 crystals to proceed";
 	}
 	
 

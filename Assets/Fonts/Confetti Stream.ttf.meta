@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f3b2c9b53d4f4d14a985379007fee523
+timeCreated: 1553311453
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Confetti Stream
+  fontNames:
+  - Confetti Stream
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

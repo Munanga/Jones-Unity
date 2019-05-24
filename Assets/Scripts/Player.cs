@@ -26,9 +26,17 @@ public class Player : MonoBehaviour
 		body = GetComponent<Rigidbody2D> ();
 
 	}
-		
 
-	void OnTriggerEnter2D(Collider2D other)
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
+
+    void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.tag == "Deadly") 
 		{
@@ -41,6 +49,7 @@ public class Player : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Deadly") 
 		{
+            AudioSource.PlayClipAtPoint (deathScream, transform.position);
 			death ();
 		}
 
@@ -48,7 +57,7 @@ public class Player : MonoBehaviour
 
 	void death()
 	{
-		AudioSource.PlayClipAtPoint (deathScream, transform.position);
+		
 		script.isDead = true;
 		Destroy (gameObject);
 	}
@@ -63,7 +72,9 @@ public class Player : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		if (Input.GetKey ("right")) {
+     
+
+        if (Input.GetKey ("right")) {
 			move (speed, 1);
 		} else if (Input.GetKey ("left")) {
 			move (-speed, -1);
@@ -73,9 +84,9 @@ public class Player : MonoBehaviour
 
 
 		bool touch = Physics2D.IsTouchingLayers (one, LayerMask.GetMask ("Solid"));
-		if (touch && Input.GetKey ("up")) {
+		if (touch && Input.GetKey ("space")) {
 			animator.SetInteger ("AnimState", 2);
-			body.velocity = new Vector2(body.velocity.x,jumpHeight);//AddForce (new Vector2 (body.velocity.x, jumpHeight));
+			body.velocity = new Vector2(body.velocity.x, jumpHeight);//AddForce (new Vector2 (body.velocity.x, jumpHeight));
 
 		}
 		
