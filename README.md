@@ -3,4 +3,4 @@
 
 ![alt text](https://raw.githubusercontent.com/Munanga/Jones-Unity/master/GamePics/jones.png) 
 
-![alt text](https://raw.githubusercontent.com/Munanga/SpadesCardGame/master/GamePics/JonesMenu.png) 
+![alt text](https://raw.githubusercontent.com/Munanga/Jones-Unity/master/GamePics/JonesMenu.png) 
