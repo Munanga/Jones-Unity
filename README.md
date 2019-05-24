@@ -1,6 +1,6 @@
 # Jones-Unity
-"Jones and the rusty adventures" Unity 2D game
+"Jones and the rusty adventures" Unity 2D game. Please run the game on a 1920 * 1080 resolution!
 
-![alt text](https://raw.githubusercontent.com/Munanga/SpadesCardGame/master/readmePics/jones.JPG) 
+![alt text](https://raw.githubusercontent.com/Munanga/Jones-Unity/master/GamePics/jones.JPG) 
 
-![alt text](https://raw.githubusercontent.com/Munanga/SpadesCardGame/master/readmePics/JonesMenu.JPG) 
+![alt text](https://raw.githubusercontent.com/Munanga/SpadesCardGame/master/GamePics/JonesMenu.JPG) 
